@@ -14,32 +14,25 @@ public class UsersTable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "userId")
-    private int userId;
+    private long userId;
 
     @Pattern(regexp = "^[a-zA-Z]+$", message = "First name must contain only alphabets")
-    @Size(min = 2, message = "First name must be at least 3 characters long")
-    @Column(name = "firstName")
+    @Size(min = 2, message = "First name must be at least 2 characters long")
     private String firstName;
 
     @Pattern(regexp = "^[a-zA-Z]+$", message = "Last name must contain only alphabets")
-    @Size(min = 2, message = "Last name must be at least 3 characters long")
-    @Column(name = "lastName")
+    @Size(min = 2, message = "Last name must be at least 2 characters long")
     private String lastName;
 
     @Digits(integer = 10, fraction = 0, message = "Mobile number must be a 10-digit integer")
-    @Column(name = "mobileNumber")
     private long mobileNumber;
 
-    @Column(name = "address")
-    private long address;
+    private String address;
 
     @Email
-    @Column(name = "emailId")
     private String emailId;
 
     @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$", message = "Incorrect Password format")
-    @Column(name = "password")
     private String password;
 
 }

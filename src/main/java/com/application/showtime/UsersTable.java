@@ -21,8 +21,8 @@ public class UsersTable {
     @Column(name = "mobileNumber")
     private long mobileNumber;
 
-    @Column(name = "emailAddress")
-    private String emailAddress;
+    @Column(name = "emailId")
+    private String emailId;
 
     @Column(name = "passwordString")
     private String passwordString;

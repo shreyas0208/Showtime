@@ -32,7 +32,7 @@ public class UserRegistrationEntity {
     @Email
     private String emailId;
 
-    @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$", message = "Incorrect Password format")
+    //@Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$", message = "Incorrect Password format")
     private String password;
 
 }

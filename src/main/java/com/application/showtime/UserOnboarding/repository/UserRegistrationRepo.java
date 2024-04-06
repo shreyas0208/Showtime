@@ -5,5 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRegistrationRepo extends CrudRepository<UserRegistrationEntity,Integer> {
+public interface UserRegistrationRepo extends CrudRepository<UserRegistrationEntity,Long> {
+
 }
